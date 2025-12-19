@@ -24,10 +24,11 @@ Calculated on monthly closing prices:
 - Naming format: `result_<TICKER>.csv`
 
 # Assumptions
+- Dataset contains continuous data per each ticker within the 2-year period.
+- There are no duplicated dates within a given ticker’s time series.
 - Dataset has no missing dates per ticker
 - Pandas `ewm()` is used for EMA as it follows the standard formula
 - Final 24 months are selected per ticker
-- Assumption: Month-end frequency (resample("M"))
 
 ## How to Run
 ```bash
