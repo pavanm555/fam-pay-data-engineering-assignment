@@ -1,16 +1,11 @@
-from pathlib import Path
-import os
 from data_loader import load_data
 from transformations import daily_to_monthly
 from indicators import add_technical_indicators
 
-BASE_DIR = Path(__file__).resolve().parents[1]
-DATA_PATH = BASE_DIR / "data" / "output_file.csv"
-OUTPUT_DIR = BASE_DIR / "output"
+DATA_PATH = "../data/stocks_prices.csv"
+OUTPUT_DIR = "../output"
 
 def main():
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
-
     # Load
     df = load_data(DATA_PATH)
 
