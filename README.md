@@ -30,6 +30,9 @@ Calculated on monthly closing prices:
 - Pandas `ewm()` is used for EMA as it follows the standard formula
 - Final 24 months are selected per ticker
 
+## Additional Analysis & Visualizations
+To further validate data quality and better understand the dataset, I performed additional exploratory analysis and visualizations in a separate Jupyter notebook.
+
 ## How to Run
 ```bash
 pip install -r requirements.txt
